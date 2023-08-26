@@ -1,0 +1,115 @@
+<!-- <!DOCTYPE html>
+<html>
+<head>
+  <title>Number Guessing Game</title>
+</head>
+<body>
+  <h2>Number Guessing Game</h2>
+  <p>Try to guess the random number between 1 and 10!</p>
+
+  <script>
+    // Generate a random integer between 1 and 10
+    const randomNumber = Math.floor(Math.random() * 10) + 1;
+
+    // Function to check user's guess
+    function checkGuess() {
+      const userGuess = parseInt(prompt("Enter your guess (between 1 and 10):"));
+
+      if (userGuess === randomNumber) {
+        alert("Good Work");
+      } else {
+        alert("Not matched. The correct number was: " + randomNumber);
+      }
+    }
+
+    // Call the checkGuess function when the page loads
+    window.onload = checkGuess;
+  </script>
+</body>
+</html> -->
+
+
+<!-- <!DOCTYPE html>
+<html>
+<head>
+  <title>Calculator</title>
+</head>
+<body>
+  <h2>Number Calculator</h2>
+  <form id="calculatorForm">
+    <label for="num1">Enter first number: </label>
+    <input type="number" id="num1" required><br><br>
+    
+    <label for="num2">Enter second number: </label>
+    <input type="number" id="num2" required><br><br>
+    
+    <button type="button" onclick="calculate()">Calculate</button>
+  </form>
+  
+  <h3>Results:</h3>
+  <p id="multiplicationResult"></p>
+  <p id="divisionResult"></p>
+
+  <script>
+    function calculate() {
+      const num1 = parseFloat(document.getElementById("num1").value);
+      const num2 = parseFloat(document.getElementById("num2").value);
+      
+      const multiplicationResult = num1 * num2;
+      const divisionResult = num1 / num2;
+      
+      document.getElementById("multiplicationResult").textContent = `Multiplication: ${multiplicationResult}`;
+      document.getElementById("divisionResult").textContent = `Division: ${divisionResult}`;
+    }
+  </script>
+</body>
+</html>
+ -->
+
+
+<!-- <!DOCTYPE html>
+<html>
+<head>
+  <title>Current URL</title>
+</head>
+<body>
+  <h2>Current Website URL</h2>
+  <p>The current URL is: <span id="urlOutput"></span></p>
+
+  <script>
+    // Get the current website URL
+    const currentURL = window.location.href;
+    
+    // Display the URL in the output element
+    document.getElementById("urlOutput").textContent = currentURL;
+  </script>
+</body>
+</html> -->
+
+<!DOCTYPE html>
+<html>
+<head>
+  <title>Filename Extension</title>
+</head>
+<body>
+  <h2>Filename Extension Extractor</h2>
+  <form id="filenameForm">
+    <label for="filename">Enter a filename: </label>
+    <input type="text" id="filenameInput" required>
+    <button type="button" onclick="extractExtension()">Extract Extension</button>
+  </form>
+
+  <p>File extension: <span id="extensionOutput"></span></p>
+
+  <script>
+    function extractExtension() {
+      const filename = document.getElementById("filenameInput").value;
+      const extension = filename.split('.').pop();
+
+      document.getElementById("extensionOutput").textContent = extension;
+    }
+  </script>
+</body>
+</html>
+
+
